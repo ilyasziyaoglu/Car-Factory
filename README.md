@@ -8,8 +8,8 @@ This repository contains a simple example of factory design pattern with spring 
 [Pre requirements](#requirements)<br>
 [Download](#download)<br>
 [Installing](#installing)<br>
-[Run Project](#run)<br>
 [Run Tests](#runtests)<br>
+[Run Project](#run)<br>
 [Using](#using)
 
 <a name="technologies"/></a>
@@ -40,13 +40,18 @@ This repository contains a simple example of factory design pattern with spring 
   * To build project, before go into project folder bash, powershall or terminal and run above code snippet.<br>
     `mvn clean install`<br>
     If everything goes well you will see the last `BUILD SUCCESS` post.
-  
-<a name="run"/></a>
-## Run Project
-  * To run project run above code snippet.<br>
-    `java -jar ./target/vitelco-0.0.1-SNAPSHOT.jar`<br>
 
 <a name="runtests"/></a>
 ## Run Tests
   * To run tests run above code snippet.<br>
     `mvn clean compile test`<br>
+
+<a name="run"/></a>
+## Run Project
+  * To run project run above code snippet. After this process, it will start to accept requests over port 8080 with the embedded tomcat server.<br>
+    `java -jar ./target/vitelco-0.0.1-SNAPSHOT.jar`<br>
+
+<a name="using"/></a>
+## Using
+  * To make a request for this project, you can use the Postman collection in the project or run the following `curl` command from the terminal.<br>
+    `curl --location --request POST 'localhost:8080/ --header 'Content-Type: text/plain --data-raw 'cabrio'`
