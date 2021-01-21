@@ -32,7 +32,7 @@ This repository contains a simple example of factory design pattern with spring 
 <a name="download"/></a>
 ## Download
   * First of all you need to clone this project. For this, if you have installed git then you can run above code snippet in bash, powershall or terminal.<br>
-      `https://github.com/ilyasziyaoglu/factory-pattern-with-spring-boot.git`<br>
+      `git clone https://github.com/ilyasziyaoglu/factory-pattern-with-spring-boot.git`<br>
     or you can download from github.com project page as a `.zip` file directly and extract.
 
 <a name="installing"/></a>
