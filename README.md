@@ -7,8 +7,8 @@ This repository contains a simple example of factory design pattern with spring 
 [Dependencies](#dependencies)<br>
 [Pre requirements](#requirements)<br>
 [Download](#download)<br>
-[Installing](#installing)<br>
 [Run Tests](#runtests)<br>
+[Installing](#installing)<br>
 [Run Project](#run)<br>
 [Using](#using)
 
@@ -35,16 +35,16 @@ This repository contains a simple example of factory design pattern with spring 
       `git clone https://github.com/ilyasziyaoglu/Car-Factory.git`<br>
     or you can download from github.com project page as a `.zip` file directly and extract.
 
+<a name="runtests"/></a>
+## Run Tests
+  * To run tests run above code snippet.<br>
+    `mvn clean compile test`<br>
+
 <a name="installing"/></a>
 ## Installing
   * To build project, before go into project folder bash, powershall or terminal and run above code snippet.<br>
     `mvn clean install`<br>
     If everything goes well you will see the last `BUILD SUCCESS` post.
-
-<a name="runtests"/></a>
-## Run Tests
-  * To run tests run above code snippet.<br>
-    `mvn clean compile test`<br>
 
 <a name="run"/></a>
 ## Run Project
