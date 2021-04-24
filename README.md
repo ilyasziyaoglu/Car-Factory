@@ -49,7 +49,7 @@ This repository contains a simple example of factory design pattern with spring 
 <a name="run"/></a>
 ## Run Project
   * To run project run above code snippet. After this process, it will start to accept requests over port 8080 with the embedded tomcat server.<br>
-    `java -jar ./target/vitelco-0.0.1-SNAPSHOT.jar`<br>
+    `java -jar ./target/carfactory-0.0.1-SNAPSHOT.jar`<br>
 
 <a name="using"/></a>
 ## Using
