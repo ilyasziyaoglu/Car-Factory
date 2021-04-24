@@ -1,6 +1,6 @@
-package com.example.vitelco.model;
+package com.example.carfactory.model;
 
-import com.example.vitelco.enums.CarType;
+import com.example.carfactory.enums.CarType;
 
 /**
  * @author Ilyas Ziyaoglu

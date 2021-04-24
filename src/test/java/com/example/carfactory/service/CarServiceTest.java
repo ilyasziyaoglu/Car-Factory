@@ -1,11 +1,11 @@
-package com.example.vitelco.service;
+package com.example.carfactory.service;
 
-import com.example.vitelco.enums.CarType;
-import com.example.vitelco.factory.CarFactory;
-import com.example.vitelco.model.Cabrio;
-import com.example.vitelco.model.Car;
-import com.example.vitelco.model.Hatchback;
-import com.example.vitelco.model.Sedan;
+import com.example.carfactory.enums.CarType;
+import com.example.carfactory.factory.CarFactory;
+import com.example.carfactory.model.Cabrio;
+import com.example.carfactory.model.Car;
+import com.example.carfactory.model.Hatchback;
+import com.example.carfactory.model.Sedan;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentMatchers;
@@ -31,7 +31,7 @@ class CarServiceTest {
 		when(carFactory.createCarByType(ArgumentMatchers.any(CarType.class))).thenReturn(car);
 
 		String message = carService.getCarByType("cabrio");
-		assertEquals(message, "Cabrio Car has produced.");
+		assertEquals("Cabrio Car has produced.", message);
 	}
 
 	@Test
@@ -40,7 +40,7 @@ class CarServiceTest {
 		when(carFactory.createCarByType(ArgumentMatchers.any(CarType.class))).thenReturn(car);
 
 		String message = carService.getCarByType("sedan");
-		assertEquals(message, "Sedan Car has produced.");
+		assertEquals("Sedan Car has produced.", message);
 	}
 
 	@Test
@@ -49,24 +49,24 @@ class CarServiceTest {
 		when(carFactory.createCarByType(ArgumentMatchers.any(CarType.class))).thenReturn(car);
 
 		String message = carService.getCarByType("hatchback");
-		assertEquals(message, "Hatchback Car has produced.");
+		assertEquals("Hatchback Car has produced.", message);
 	}
 
 	@Test
 	void getCarNone() {
 		String message = carService.getCarByType("");
-		assertEquals(message, "Car can not created. Car type is invalid!");
+		assertEquals("Car can not created. Car type is invalid!", message);
 	}
 
 	@Test
 	void getCarNull() {
 		String message = carService.getCarByType(null);
-		assertEquals(message, "Car can not created. Car type is invalid!");
+		assertEquals("Car can not created. Car type is invalid!", message);
 	}
 
 	@Test
 	void getCarInvalid() {
 		String message = carService.getCarByType("asdasdasad");
-		assertEquals(message, "Car can not created. Car type is invalid!");
+		assertEquals("Car can not created. Car type is invalid!", message);
 	}
 }

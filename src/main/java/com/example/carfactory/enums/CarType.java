@@ -1,4 +1,4 @@
-package com.example.vitelco.enums;
+package com.example.carfactory.enums;
 
 /**
  * @author Ilyas Ziyaoglu
@@ -6,7 +6,7 @@ package com.example.vitelco.enums;
  */
 
 public enum CarType {
-	CABRIO("cabrio"), SEDAN("sedan"), HATCHBACK("hatchback"), NONE("none");
+	CABRIO("cabrio"), SEDAN("sedan"), HATCHBACK("hatchback");
 
 	CarType(String value) {
 		this.value = value;
@@ -20,6 +20,6 @@ public enum CarType {
 				return carType;
 			}
 		}
-		return NONE;
+		return null;
 	}
 }

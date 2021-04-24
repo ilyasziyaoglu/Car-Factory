@@ -1,12 +1,13 @@
-package com.example.vitelco.factory;
+package com.example.carfactory.factory;
 
-import com.example.vitelco.enums.CarType;
-import com.example.vitelco.model.Cabrio;
-import com.example.vitelco.model.Car;
-import com.example.vitelco.model.Hatchback;
-import com.example.vitelco.model.Sedan;
-import org.springframework.stereotype.Component;
+import com.example.carfactory.enums.CarType;
+import com.example.carfactory.model.Cabrio;
+import com.example.carfactory.model.Car;
+import com.example.carfactory.model.Hatchback;
+import com.example.carfactory.model.Sedan;
 import org.springframework.stereotype.Service;
+
+import java.util.Objects;
 
 /**
  * @author Ilyas Ziyaoglu
@@ -23,7 +24,7 @@ public class CarFactory {
 	 * */
 	public Car createCarByType(CarType carType) {
 
-		if (carType == null || carType.equals(CarType.NONE)) {
+		if (Objects.isNull(carType)) {
 			return null;
 		}
 

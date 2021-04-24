@@ -1,6 +1,6 @@
-package com.example.vitelco.controller;
+package com.example.carfactory.controller;
 
-import com.example.vitelco.service.CarService;
+import com.example.carfactory.service.CarService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @AllArgsConstructor
 public class CarController {
 
-	final private CarService carService;
+	private final CarService carService;
 
 	@PostMapping(consumes = "text/plain")
 	public String createCar(@RequestBody String carType) {

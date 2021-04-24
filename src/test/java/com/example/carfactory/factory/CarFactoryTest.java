@@ -1,7 +1,7 @@
-package com.example.vitelco.factory;
+package com.example.carfactory.factory;
 
-import com.example.vitelco.enums.CarType;
-import com.example.vitelco.model.Car;
+import com.example.carfactory.enums.CarType;
+import com.example.carfactory.model.Car;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -20,7 +20,7 @@ class CarFactoryTest {
 		Car car = carFactory.createCarByType(CarType.CABRIO);
 
 		assertNotNull(car);
-		assertEquals(car.getType(), CarType.CABRIO);
+		assertEquals(CarType.CABRIO, car.getType());
 	}
 
 	@Test
@@ -28,7 +28,7 @@ class CarFactoryTest {
 		Car car = carFactory.createCarByType(CarType.SEDAN);
 
 		assertNotNull(car);
-		assertEquals(car.getType(), CarType.SEDAN);
+		assertEquals(CarType.SEDAN, car.getType());
 	}
 
 	@Test
@@ -36,12 +36,12 @@ class CarFactoryTest {
 		Car car = carFactory.createCarByType(CarType.HATCHBACK);
 
 		assertNotNull(car);
-		assertEquals(car.getType(), CarType.HATCHBACK);
+		assertEquals(CarType.HATCHBACK, car.getType());
 	}
 
 	@Test
 	void createCarByTypeNone() {
-		Car car = carFactory.createCarByType(CarType.NONE);
+		Car car = carFactory.createCarByType(null);
 
 		assertNull(car);
 	}

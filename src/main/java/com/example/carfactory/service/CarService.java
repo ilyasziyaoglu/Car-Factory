@@ -1,10 +1,12 @@
-package com.example.vitelco.service;
+package com.example.carfactory.service;
 
-import com.example.vitelco.enums.CarType;
-import com.example.vitelco.factory.CarFactory;
-import com.example.vitelco.model.Car;
+import com.example.carfactory.enums.CarType;
+import com.example.carfactory.factory.CarFactory;
+import com.example.carfactory.model.Car;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+
+import java.util.Objects;
 
 /**
  * @author Ilyas Ziyaoglu
@@ -25,7 +27,7 @@ public class CarService {
 
 		// getting car type
 		CarType carType= CarType.fromValue(carTypeStr);
-		if (carType == null || carType.equals(CarType.NONE)) {
+		if (Objects.isNull(carType)) {
 			return  "Car can not created. Car type is invalid!";
 		}
 

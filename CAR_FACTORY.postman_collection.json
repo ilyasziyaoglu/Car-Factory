@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "a9ebb1e1-004d-4bd9-8c2d-144154a99067",
+		"name": "CAR_FACTORY",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Cabrio",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Cabrio Car has produced.\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "cabrio",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				},
+				"description": "This endpoint creates a car. \n\nThis endpoint just require a car type as strin request body. Devfined car types listed below:\n    \n    \"cabrio\", \"sedan\", \"hatchback\"\n\nResponse is also a string. That givs information about process result. For example:\n \n Success: \"Cabrio Car has produced.\"\n Fail: \"Car can not created. Car type is invalid!\"\n    "
+			},
+			"response": []
+		},
+		{
+			"name": "Create Sedan",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Sedan Car has produced.\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "sedan",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				},
+				"description": "This endpoint creates a car. \n\nThis endpoint just require a car type as strin request body. Devfined car types listed below:\n    \n    \"cabrio\", \"sedan\", \"hatchback\"\n\nResponse is also a string. That givs information about process result. For example:\n \n Success: \"Cabrio Car has produced.\"\n Fail: \"Car can not created. Car type is invalid!\"\n    "
+			},
+			"response": []
+		},
+		{
+			"name": "Create Hatchback",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Hatchback Car has produced.\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "hatchback",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				},
+				"description": "This endpoint creates a car. \n\nThis endpoint just require a car type as strin request body. Devfined car types listed below:\n    \n    \"cabrio\", \"sedan\", \"hatchback\"\n\nResponse is also a string. That givs information about process result. For example:\n \n Success: \"Cabrio Car has produced.\"\n Fail: \"Car can not created. Car type is invalid!\"\n    "
+			},
+			"response": []
+		}
+	]
+}
