@@ -17,7 +17,7 @@ This repository contains a simple example of factory design pattern with spring 
   * Java 11
   * Maven
   * Spring Boot
-  * Lombook
+  * Lombok
   
 <a name="dependencies"/></a>
 ## Dependencies
