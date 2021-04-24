@@ -54,6 +54,4 @@ This repository contains a simple example of factory design pattern with spring 
 <a name="using"/></a>
 ## Using
   * To make a request for this project, you can use the Postman collection in the project or run the following `curl` command from the terminal.<br>
-    `curl --location --request POST 'http://localhost:8080/' \
---header 'Content-Type: text/plain' \
---data-raw 'cabrio'`
+    `curl --location --request POST 'http://localhost:8080/' --header 'Content-Type: text/plain' --data-raw 'cabrio'`
